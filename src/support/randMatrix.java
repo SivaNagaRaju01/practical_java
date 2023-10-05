@@ -12,7 +12,7 @@ public class randMatrix extends readMatrix {
 
         for(int i=0; i<m; i++) {
             for(int j=0; j<n; j++) {
-                x[i][j] = rand.nextInt(100);
+                x[i][j] = rand.nextInt(10000);
             }
         }
 
