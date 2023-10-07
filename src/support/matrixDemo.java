@@ -7,6 +7,6 @@ public class matrixDemo {
         readMatrix read = new randMatrix();
         Display show = new Display();
         int[][] x = read.intMatrix();
-        show.Matrix(x,"Demo");
+        show.Matrix(x,"Dem");
     }
 }

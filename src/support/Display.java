@@ -82,10 +82,10 @@ public class Display {
                 for(int i=0; i<rlen+c-1; i++){
                     System.out.print("-");
                 }
-                System.out.print("\t-****");
+                System.out.println("-****");
             }else{
                 int temp;
-                if((l%2!=0 && q%2==0) | (l%2!=0 && q%2==0)){
+                if((l%2!=0 && q%2==0) | (l%2==0 && q%2!=0)){
                     temp = (9+q)/2;
                 }else{
                     temp = (8+q)/2;
@@ -143,7 +143,7 @@ public class Display {
             for(double[] i: x){
                 n = 0;
                 for(double j: i){
-                    s[m][n] = String.format("%.2f", j);
+                    s[m][n] = String.format("%.4f", j);
                     n++;
                 }
                 m++;
@@ -165,7 +165,7 @@ public class Display {
                 for(int i=0; i<rlen+c-1; i++){
                     System.out.print("-");
                 }
-                System.out.print("\t-****");
+                System.out.println("-****");
             }else{
                 int temp;
                 if((l%2!=0 && q%2==0) | (l%2!=0 && q%2==0)){

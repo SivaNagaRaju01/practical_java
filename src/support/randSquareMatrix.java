@@ -11,7 +11,7 @@ public class randSquareMatrix extends readSquareMatrix {
 
         for(int i=0; i<n; i++) {
             for(int j=0; j<n; j++) {
-                x[i][j] = rand.nextInt();
+                x[i][j] = rand.nextInt(100);
             }
         }
 
@@ -25,7 +25,7 @@ public class randSquareMatrix extends readSquareMatrix {
 
         for(int i=0; i<n; i++) {
             for(int j=0; j<n; j++) {
-                x[i][j] = rand.nextDouble();
+                x[i][j] = rand.nextDouble(100);
             }
         }
 

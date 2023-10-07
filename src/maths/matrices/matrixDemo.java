@@ -7,15 +7,18 @@ public class matrixDemo {
     public static void main(String args[]) throws IOException {
         randMatrix readmat = new randMatrix();
         Read read = new Read();
-        Matrix mat = new Matrix();
+        OLDMatrix mat = new OLDMatrix();
         Display show = new Display();
-        double[][][] x;
+        //double[][][] x;
+        int[][][] x;
 
         int n = read.read_int("Enter Number of Matrices");
-        x = new double[n][][];
+        //x = new double[n][][];
+        x = new int[n][][];
 
         for(int i=0; i<n; i++) {
-            x[i] = readmat.doubleMatrix();
+            //x[i] = readmat.doubleMatrix();
+            x[i] = readmat.intMatrix();
             System.out.println();
         }
 
@@ -25,9 +28,10 @@ public class matrixDemo {
             System.out.println();
         }
 
-        double[][] smat = mat.addition(x);
+        //double[][] smat = mat.subtraction(x);
+        int[][] smat = mat.product(x);
         if(smat != null) {
-            show.Matrix(smat, "Add");
+            show.Matrix(smat, "product");
         }
     }
 }
