@@ -3,7 +3,7 @@ package maths.matrices;
 import support.*;
 import java.io.IOException;
 
-public class InverseDemo {
+public class zInverseDemo {
     public static void main(String args[]) throws IOException {
         readMatrix read = new randSquareMatrix();
         Inverse inv = new Inverse();

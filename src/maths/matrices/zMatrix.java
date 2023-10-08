@@ -77,7 +77,7 @@ class base {
     }
 }
 
-public class OLDMatrix extends base{
+public class zMatrix extends base{
     public int[][] addition(int[][][] mat) {
         int[][] m;
         if(sumCheck(mat)) {

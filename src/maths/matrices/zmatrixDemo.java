@@ -3,11 +3,11 @@ package maths.matrices;
 import support.*;
 import java.io.IOException;
 
-public class matrixDemo {
+public class zmatrixDemo {
     public static void main(String args[]) throws IOException {
         randMatrix readmat = new randMatrix();
         Read read = new Read();
-        OLDMatrix mat = new OLDMatrix();
+        zMatrix mat = new zMatrix();
         Display show = new Display();
         //double[][][] x;
         int[][][] x;

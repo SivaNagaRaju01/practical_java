@@ -3,12 +3,12 @@ package maths.matrices;
 import support.*;
 import java.io.IOException;
 
-public class detDemo {
+public class zdetDemo {
     public static void main(String args[]) throws IOException {
         //Read read = new Read();
         readMatrix readmat = new randSquareMatrix();
         displayDet show = new displayDet();
-        OLDMatrix mat = new OLDMatrix();
+        zMatrix mat = new zMatrix();
 
         int[][] x = readmat.intMatrix();
         long det = mat.det(x);
