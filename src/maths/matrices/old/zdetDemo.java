@@ -14,5 +14,14 @@ public class zdetDemo {
         long det = mat.det(x);
         
         show.Matrix(x, "DET", det);
+        zdetDemo.intLen(107);
+    }
+
+    static void intLen(int x) {
+        int len=0;
+        for(int i=x; i>0; i=i/10) {
+            len++;
+        }
+        System.out.println("Lenth = "+len);
     }
 }
