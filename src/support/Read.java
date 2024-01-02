@@ -12,6 +12,8 @@ public class Read {
         System.out.print(str+": ");
         int x = Integer.parseInt(br.readLine());
 
+        br.close();
+
         return x;
     }
 
@@ -21,6 +23,8 @@ public class Read {
 
         System.out.print(str+": ");
         double x = Integer.parseInt(br.readLine());
+
+        br.close();
 
         return x;
     }
