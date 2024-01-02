@@ -1,2 +1,8 @@
-# ignore all 
+# ignore /bin Folder
 bin/*
+
+# ignore .class files
+*.class
+
+# ignore .txt files
+*.txt
