@@ -43,7 +43,7 @@ public class Sort extends base {
         int x,t;
 
         for(int i=0; i<n-1; i++){
-            Display show = new Display();
+            //Display show = new Display();
             x = list[i];
             t = i;
             for(int j=i+1; j<n; j++){
@@ -53,7 +53,7 @@ public class Sort extends base {
                 }
             }
             if(t != i) swap(list, i, t);
-            show.Array(list, "Itteration["+(i+1)+"]");
+            //show.Array(list, "Itteration["+(i+1)+"]");
         }
     }
 
@@ -311,5 +311,10 @@ public class Sort extends base {
             */
             partition(list,p,q,r);
         }
+    }
+
+    void callMethod(int[] list) {
+        System.out.println("Must Override this Method.");
+        return;
     }
 }
